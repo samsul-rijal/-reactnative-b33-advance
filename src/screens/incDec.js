@@ -1,10 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { TouchableOpacity } from "react-native";
-import { Text, Box } from "native-base";
+import { Text, Box, Pressable } from "native-base";
 import { backgroundColor, height } from "styled-system";
 
-export default function incDec() {
+export default function incDec({navigation}) {
   // Init State
   const [counter, setCounter] = useState(0);
 
@@ -65,6 +65,12 @@ export default function incDec() {
       >
         <Text color={{ color: "white" }}>Less</Text>
       </TouchableOpacity>
+
+      <Pressable
+          onPress={() => navigation.navigate("form")}
+        >
+          <Text>Form Login</Text>
+        </Pressable>
     </Box>
   );
 }
