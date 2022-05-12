@@ -90,10 +90,10 @@ export default function Container() {
           }}
         />
         <Stack.Screen
-          name="Detail Social"
+          name="Detail Social Media"
           component={DetailSoc}
           options={{
-            title: "Detail Social",
+            title: "Detail Social Media",
             headerMode: "screen",
             headerTintColor: "white",
             headerStyle: { backgroundColor: theme.colors.primary["300"] },
